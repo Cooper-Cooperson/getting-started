@@ -33,3 +33,8 @@ jobs:
        name: getting-started-github
        location: 'france south'
        ports: '3000'
+       #  Volume mount details for Azure File Share to make persistant storage
+       azure-file-volume-share-name: vdvbdockerstorage
+       azure-file-volume-account-name: ${{ secrets.STORAGE_ACCOUNT_NAME }}
+       azure-file-volume-account-key: ${{ secrets.STORAGE_ACCOUNT_KEY }}
+       azure-file-volume-mount-path: /mnt/azfiles
