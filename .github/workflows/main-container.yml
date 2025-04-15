@@ -31,7 +31,7 @@ jobs:
        registry-username: ${{ secrets.REGISTRY_USERNAME }}
        registry-password: ${{ secrets.REGISTRY_PASSWORD }}
        name: getting-started-github
-       location: 'france south'
+       location: 'northeurope'
        ports: '3000'
        #  Volume mount details for Azure File Share to make persistant storage
        azure-file-volume-share-name: dockerfileshare
